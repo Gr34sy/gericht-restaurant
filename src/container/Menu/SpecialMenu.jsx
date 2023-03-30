@@ -1,11 +1,61 @@
 import React from 'react';
 
+import SubHeading from '../../components/SubHeading/SubHeading';
+import MenuItem from '../../components/MenuItem/MenuItem';
+
+import { images, data } from '../../constants';
 import './SpecialMenu.css';
 
 const SpecialMenu = () => (
-  <div>
-    SpecialMenu
-  </div>
+  <section className='app__specialMenu flex__center' id='menu'>
+    <div className="app__specialMenu-title">
+      <SubHeading title="Menu that fits you Palette" />
+      <h1 className="headtext__cormorant">
+        Today's Special
+      </h1>
+    </div>
+
+    <div className="app__specialMenu-menu">
+      <div className="app__specialMenu-menu_wine flex__center">
+        <p>
+          Wine & Beer
+        </p>
+
+        <div className="app__specialMenu_menu_items">
+          <p className="app__specialMenu_menu_heading">
+            {data.wines.map((wine, index) => (
+              <p>{wine.title}</p>
+            ))}
+          </p>
+        </div>
+      </div>
+
+      <div className="app__specialMenu-menu_img">
+        <img src={images.menu} alt="cocktail shakers" />
+      </div>
+
+      <div className="app__specialMenu-menu_cocktails flex__center">
+        <p>
+          Wine & Beer
+        </p>
+
+        <div className="app__specialMenu_menu_items">
+          <p className="app__specialMenu_menu_heading">
+            {data.cocktails.map((cocktail, index) => (
+              <p>{cocktail.title}</p>
+            ))}
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style={{marginTop: '15px'}}>
+      <button type="button" className='custom__button'>
+        View More
+      </button>
+    </div>
+  </section>
 );
 
 export default SpecialMenu;

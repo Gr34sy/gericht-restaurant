@@ -21,3 +21,10 @@
         max-width: 800px;
     }
 }
+
+@media (max-width: 650px){
+    .app__header-h1{
+        line-height: 80px;
+        font-size: 60px;
+    }
+}
