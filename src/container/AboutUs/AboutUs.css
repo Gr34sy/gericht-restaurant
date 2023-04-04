@@ -44,8 +44,8 @@
 .app__aboutus-content_history{
     flex: 1;
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
 
     text-align: left;
