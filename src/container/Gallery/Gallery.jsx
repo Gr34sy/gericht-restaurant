@@ -31,7 +31,7 @@ const Gallery = () => {
         <p className="p__opensans" style={{color: '#AAA', marginTop: '2rem'}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.
         </p>
-        <button type="button" className="custon__button">View More</button>
+        <button type="button" className="custom__button">View More</button>
       </div>
 
       <div className="app__gallery-images">
