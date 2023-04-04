@@ -14,6 +14,12 @@ const Newsletter = () => (
         And never miss latest update
       </p>
     </div>
+    <div className="app__newsletter-input flex__center">
+      <input type="email" placeholder='Enter Your Email Address' />
+      <button className='custom__button' type="button">
+        Subscribe
+      </button>
+    </div>
   </div>
 );
 
